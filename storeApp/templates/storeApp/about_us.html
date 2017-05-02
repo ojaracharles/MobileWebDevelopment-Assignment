@@ -1,0 +1,54 @@
+{% extends 'storeApp/base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="{% static 'images/cables.jpg' %}" alt="First slide">
+
+                        </div>
+                        <div class="item">
+                            <img src="{% static 'images/laptop.jpg' %}" alt="Second slide">
+
+                        </div>
+                        <div class="item">
+                            <img src="{% static 'images/camera.jpg' %}" alt="Third slide">
+
+                        </div>
+                    </div>
+                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                 </div>
+        <div class="container">
+            <p>
+                New World Online Store is a global creative commerce platform. We build markets,
+                services and economic opportunity for creative entrepreneurs.
+
+                Within our markets, millions of people around the world connect, both online and
+                offline, to make, sell and buy unique goods. We also offer a wide range of Seller Services
+                and tools that help creative entrepreneurs start, manage and scale their businesses. Our mission
+                is to reimagine commerce in ways that build a more fulfilling
+                and lasting world, and we're committed to using the power of business to strengthen communities and empower people.
+            </p>
+            <h2>A handcrafted beginning</h2>
+
+            <p>New World Online Store was founded in March 2017 in an apartment in Gulu, Uganda to fill a need for
+            an online community where crafters, artists and makers could sell their handmade and vintage
+            goods and craft supplies. In the spirit of handmade, founder Ojara and two friends designed the
+            first site, wrote the code, assembled the servers and spliced the cables to get New World Online Store up and running.
+            </p>
+        </div>
+    
+{% endblock %}
